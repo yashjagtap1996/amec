@@ -1,0 +1,959 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ...........................first-page....................................... */
+
+.first-page {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    position: relative;
+    /* padding-bottom: 15px; */
+}
+
+.view {
+    position: relative;
+}
+
+.amec-logos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.logs {
+    width: 15vw;
+    margin-left: 25px;
+}
+
+.logs img {
+    width: 75%;
+}
+
+.amec-techno img {
+    margin-bottom: 2.5vw;
+
+}
+
+.join-us {
+    margin-left: 14vw;
+    padding-top: 5vw;
+    width: 40vw;
+
+}
+
+.join-us h1 {
+    font-size: 20vw;
+    line-height: 23vw;
+}
+
+.join-us h6 {
+    font-size: 3.5vw;
+    text-transform: uppercase;
+}
+
+.discription {
+    width: 65vw;
+    margin-left: 8vw;
+    padding-top: 5vw;
+}
+
+.discription h6 {
+    font-size: 3.5vw;
+    text-transform: uppercase;
+
+}
+
+.discription p {
+    font-size: 2vw;
+    text-transform: uppercase;
+}
+
+
+.left-top-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.left-top-1 img {
+    width: 15vw;
+}
+
+.right-top-1 {
+    position: absolute;
+    top: 0;
+    right: 5vw;
+}
+
+.right-top-1 img {
+    width: 20vw;
+}
+
+.right-top-2 {
+    position: absolute;
+    top: 12vw;
+    right: 5vw;
+
+}
+
+.right-top-2 img {
+    width: 20vw;
+}
+
+.bottom-right-1 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bottom-right-1 img {
+    width: 25vw;
+}
+
+@media only screen and (max-width: 1600px) {
+    .mobile-scotter {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .amec-logos {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 75px 75px;
+    }
+
+    .logs {
+        width: 35vw;
+        margin: 0 auto;
+    }
+
+    .amec-mobility {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        margin-top: 3.5vw;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .first-page {
+        min-height: 75vh;
+    }
+
+    .right-top-1,
+    .right-top-2 {
+        position: unset;
+    }
+
+    .right-top-1 img {
+        width: 25vw;
+    }
+
+    .right-top-2 img {
+        width: 40vw;
+    }
+
+    .middle-content {
+        text-align: center;
+    }
+
+    .join-us h6 {
+        font-size: 4.5vw;
+    }
+
+    .discription h6 {
+        font-size: 4.5vw;
+
+    }
+
+    .discription p {
+        font-size: 2.8vw;
+    }
+
+    .discription {
+        width: 100%;
+        margin: 0;
+        padding: 2vw;
+    }
+
+
+    .left-top-1 {
+        display: none;
+    }
+
+    .bottom-right-1 {
+        display: none;
+    }
+
+    .side-by-side {
+        display: flex;
+    }
+
+    .mobile-scotter {
+        display: block;
+        margin-top: 10vw;
+    }
+
+    .mobile-scotter img {
+        width: 49vw;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 450px) {
+    .first-page {
+        min-height: 50vh;
+    }
+}
+
+/* .............................second-page...................................... */
+
+.container {
+    min-height: 100vh;
+    position: relative;
+    border: 1px solid black;
+    background-color: black;
+}
+
+.hiring-list {
+    font-size: 1.8vw;
+    text-transform: uppercase;
+    margin-left: 13vw;
+    margin-top: 18vw;
+    color: white;
+    margin-bottom: 4.2vw;
+
+}
+
+.left-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.left-top img {
+    width: 25vw;
+}
+
+.right-top {
+    position: absolute;
+    right: 5vw;
+    top: 4vw;
+}
+
+.right-top img {
+    width: 25vw;
+}
+
+.bottom-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.bottom-left img {
+    width: 18vw;
+}
+
+
+.bottom-right {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bottom-right img {
+    width: 22vw
+}
+
+@media only screen and (max-width: 1600px) {
+    #primary {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 790px) {
+    .hiring-list {
+        margin-left: 23vw;
+        margin-top: 23vw;
+        font-size: 2vw;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .container {
+        min-height: 75vh;
+    }
+
+    .hiring-list {
+        margin-left: 14vw;
+        margin-top: 20vw;
+        font-size: 2.5vw;
+    }
+
+    #primary {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    #primary img {
+        width: 50vw;
+    }
+
+    .bottom-left {
+        display: none;
+    }
+
+    .left-top {
+        display: none;
+    }
+
+    .right-top {
+        position: absolute;
+        right: 45vw;
+        top: 10vw;
+    }
+
+    .right-top img {
+        width: 40vw;
+    }
+
+
+}
+
+@media only screen and (max-width: 437px) {
+    .container {
+        min-height: 50vh;
+    }
+
+}
+
+
+/* .............................third-page........................................ */
+
+.third-page {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    position: relative;
+    /* padding-bottom: 15px; */
+    padding-bottom: 1vw;
+
+}
+
+.header {
+    padding-top: 7vw;
+    padding-left: 4vw;
+}
+
+.header h1 {
+    font-size: 4.3vw;
+}
+
+.header h3 {
+    font-size: 2.3vw;
+    font-weight: lighter;
+}
+
+.right-top-3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.right-top-3 img {
+    width: 40vw;
+}
+
+.card-items {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20vw;
+    align-items: center
+}
+
+.card-items h1 {
+    font-size: 22px;
+}
+
+.card-items p {
+    font-size: 18px;
+}
+
+.card-1-img {
+    position: absolute;
+    top: 32vw;
+    left: 7.5vw;
+}
+
+.card-1-img img {
+    width: 20vw;
+}
+
+.card1 {
+    width: 25%;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 6vw 2vw 2vw 2vw;
+    min-height: 400px;
+}
+
+
+.card-2-img {
+    position: absolute;
+    top: 25vw;
+    left: 39vw;
+}
+
+.card-2-img img {
+    width: 15vw;
+}
+
+.card2 {
+    width: 30%;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 6vw 2vw 2vw 2vw;
+    min-height: 600px;
+}
+
+.card2 p {
+    font-size: 22px;
+}
+
+.card-3-img {
+    position: absolute;
+    top: 29vw;
+    right: 17vw;
+}
+
+.card-3-img img {
+    width: 11vw;
+}
+
+.card3 {
+    width: 25%;
+    border: 1px solid white;
+    border-radius: 50px;
+    padding: 8vw 2vw 2vw 2vw;
+    min-height: 500px;
+}
+
+@media only screen and (max-width: 2000px) {
+    #secondary {
+        display: none;
+    }
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+
+
+    .card-items {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        grid-template-rows: 50% 50%;
+        grid-gap: 10px;
+    }
+
+    .card1 {
+        width: 100%;
+        grid-row: 2/3;
+        grid-column: 1/3;
+        text-align: center;
+    }
+
+    .card2 {
+        width: 100%;
+        grid-row: 1/2;
+        grid-column: 1/2;
+        min-height: 300px;
+        text-align: center;
+    }
+
+    .card3 {
+        width: 100%;
+        grid-row: 1/2;
+        grid-column: 2/3;
+        text-align: center;
+    }
+
+    .card-1-img {
+        position: unset;
+
+    }
+
+    .card-2-img {
+        position: unset;
+    }
+
+    .card-3-img {
+        position: unset;
+    }
+
+    .card-1-img img {
+        width: 20vw;
+    }
+
+    .card-2-img img {
+        width: 15vw;
+    }
+
+    .card-3-img img {
+        width: 10vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .cards {
+        min-height: 360px;
+    }
+
+    .cards p {
+        font-size: 2.5vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .third-page {
+        padding-bottom: 1vw;
+
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    #secondary {
+        display: block;
+    }
+
+    #secondary img {
+        width: 100%;
+    }
+
+    .right-top-3 {
+        display: none;
+    }
+
+    .cards {
+        min-height: 250px;
+        margin-bottom: 10px;
+    }
+
+    .cards p {
+        font-size: 3vw;
+    }
+
+    .card-items {
+        display: block;
+        margin-top: 0;
+    }
+
+    .card-1-img img {
+        width: 25%;
+    }
+
+    .card-2-img img {
+        width: 25%;
+    }
+
+    .card-3-img img {
+        width: 20%;
+    }
+
+    .card1 {
+        width: 100%;
+    }
+
+    .card2 {
+        width: 100%;
+    }
+
+    .card3 {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header h1 {
+        font-size: 5vw;
+    }
+
+    .header h3 {
+        font-size: 3vw;
+    }
+}
+
+/* ................................fourth-page..................................... */
+
+.fourth-page {
+    position: relative;
+    min-height: 150vh;
+}
+
+.content {
+    min-height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    margin-left: 10vw;
+}
+
+.content h3 {
+    font-weight: lighter;
+}
+
+.logo-4 {
+    margin-bottom: 75px;
+}
+
+.logo-4 img {
+    width: 7vw;
+
+
+}
+
+.right-border {
+    border-right: 5px solid black;
+    width: max-content;
+    padding-right: 50px;
+}
+
+.left-top-4 {
+    position: absolute;
+    top: 5vw;
+    left: 5vw;
+}
+
+.left-top-4 img {
+    width: 17vw;
+}
+
+.right-top-4 {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.right-top-4 img {
+    width: 30vw;
+}
+
+.bottom-left-4 {
+    position: absolute;
+    left: 5vw;
+    bottom: 0;
+}
+
+.bottom-left-4 img {
+    width: 23vw;
+}
+
+.bottom-center-4 {
+    position: absolute;
+    bottom: 0;
+    left: 50vw;
+}
+
+.bottom-center-4 img {
+    width: 25vw;
+}
+
+.bottom-right-4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.bottom-right-4 img {
+    width: 15vw;
+    height: 70vh;
+}
+
+
+@media only screen and (max-width: 900px) {
+    .fourth-page {
+        min-height: 100vh;
+    }
+
+    .left-top-4 img {
+        width: 25vw;
+    }
+
+    .right-top-4 img {
+        width: 40vw;
+    }
+
+    .bottom-left-4 img {
+        width: 28vw;
+    }
+
+    .bottom-center-4 img {
+        width: 28vw;
+    }
+
+    .bottom-right-4 img {
+        width: 20vw;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    .fourth-page {
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50vh 50vh 50vh 50vh;
+    }
+
+    .center h1 {
+        font-size: 6vw;
+    }
+
+    .center h3 {
+        font-size: 3.5vw;
+    }
+
+
+    .logo-4 img {
+        width: 15vw;
+    }
+
+    .left-top-4 {
+        position: unset;
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+
+
+    .right-top-4 {
+        position: unset;
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+
+    .content {
+        min-height: max-content;
+        grid-row: 2/3;
+        grid-column: 1/3;
+    }
+
+    .bottom-left-4 {
+        position: unset;
+        grid-row: 3/4;
+        grid-column: 1/2;
+    }
+
+
+    .bottom-center-4 {
+        position: unset;
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+
+    .bottom-right-4 {
+        position: unset;
+        grid-row: 3/5;
+        grid-column: 2/3;
+    }
+
+    .left-top-4 img {
+        width: 25vw;
+    }
+
+    .right-top-4 img {
+        width: 100%;
+    }
+
+    .bottom-left-4 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bottom-center-4 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .bottom-right-4 img {
+        width: 80%;
+        height: 100%;
+        margin-left: 8vw;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    .fourth-page {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 40vh 40vh 40vh 40vh;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .fourth-page {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 35vh 35vh 35vh 35vh;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .fourth-page {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 30vh 30vh 30vh 30vh;
+    }
+}
+
+/* .............................fifth-page........................................ */
+
+a {
+    color: black;
+}
+
+.fifth-page {
+    min-height: 100vh;
+    position: relative;
+}
+
+.first-section {
+    min-height: 100vh;
+    position: relative;
+    background-image: url('crop/FullSizeRender.jpg');
+    background-size: 100% 100%;
+    color: white;
+}
+
+
+.first-section h1 {
+    position: absolute;
+    bottom: 4.5vw;
+    left: 18vw;
+    font-size: 2vw;
+}
+
+.logo-1 {
+    position: absolute;
+    top: 8vw;
+    right: 5vw;
+}
+
+.logo-1 img {
+    width: 15vw;
+}
+
+.logo-2 {
+    position: absolute;
+    bottom: 3.5vw;
+    left: 5vw;
+}
+
+.logo-2 img {
+    width: 10vw;
+}
+
+.second-section {
+    padding-top: 8vw;
+    padding-bottom: 3vw;
+    min-height: 50vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.3vmax;
+    background-color: white;
+}
+
+.contact {
+    margin: auto;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link img {
+    width: 3vmax;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.social img {
+    width: 3vmax;
+}
+
+@media only screen and (max-width: 1000px) {
+    .first-section h1 {
+        display: flex;
+        flex-direction: column;
+        position: unset;
+        text-align: center;
+        justify-content: center;
+        height: 100vh;
+        font-size: 3vw;
+    }
+
+    .second-section {
+        font-size: 1.5vmax;
+    }
+
+    .logo-1 img {
+        width: 30vw;
+    }
+
+    .logo-2 img {
+        width: 15vw;
+    }
+
+    .logo-2 {
+        position: absolute;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .fifth-page {
+        min-height: 50vh;
+    }
+
+    .first-section {
+        min-height: 50vh;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .first-section h1 {
+        font-size: 4vw;
+        height: 60vh;
+    }
+
+    .logo-1 img {
+        width: 35vw;
+    }
+
+    .logo-1 {
+        top: 5vw;
+    }
+
+    .second-section {
+        min-height: 25vh;
+    }
+}
